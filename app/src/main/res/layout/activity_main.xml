@@ -29,41 +29,46 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="For warranty status, \nscan the QR code"
-        android:textSize="20sp"
-        android:textStyle="bold"
         android:layout_marginTop="20dp"
+        android:fontFamily="@font/soraregular"
+        android:text="For warranty status, \nscan the QR code"
         android:textAlignment="center"
-        android:fontFamily="@font/soraregular"/>
-    
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="15dp"
         android:layout_marginTop="30dp">
-        
+
         <androidx.cardview.widget.CardView
             android:layout_width="100dp"
             android:layout_height="100dp"
+            android:layout_marginStart="20dp"
             app:cardCornerRadius="50dp"
-            app:cardElevation="5dp">
+            app:cardElevation="10dp">
 
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="12dp"
+                android:src="@drawable/ticket" />
 
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
             android:layout_width="130dp"
             android:layout_height="130dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
             app:cardCornerRadius="70dp"
-            app:cardElevation="5dp"
-            android:layout_marginBottom="10dp"
-            android:layout_centerHorizontal="true">
+            app:cardElevation="10dp">
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:src="@drawable/qr_icon"
-                android:padding="40dp"/>
+                android:padding="40dp"
+                android:src="@drawable/qr_icon" />
 
         </androidx.cardview.widget.CardView>
 
@@ -71,12 +76,94 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
             app:cardCornerRadius="50dp"
-            app:cardElevation="5dp">
+            app:cardElevation="10dp">
 
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp"
+                android:src="@drawable/help" />
 
         </androidx.cardview.widget.CardView>
-        
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="40dp"
+            android:paddingVertical="10dp"
+            android:background="@drawable/bottom_footer"
+            android:layout_alignParentBottom="true">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_alignParentStart="true">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/home" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Home"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_centerHorizontal="true">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/plans" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Plans"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_alignParentEnd="true">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/profile" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Profile"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
     </RelativeLayout>
 
 </LinearLayout>
